@@ -1,0 +1,53 @@
+/*----------General Styling----------*/
+
+:focus{
+    outline: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Gilroy", sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*Mobile Navigation*/
+/*--------------------------------------------------------------
+# Header Navigation
+--------------------------------------------------------------*/
+header{
+    background: #0c0b09;
+    padding: 1em 1em;
+}
+
+.topnav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topnav.right{
+    align-items: center;
+    justify-content: space-around;
+    width:5em;
+}
+
+.topnav.right i{
+    font-size: 1.5em;
+}
+
+.topnav h4{
+    font-weight: 500;
+}
+
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+.intro{
+    background: #0c0b09;
+}
