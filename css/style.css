@@ -274,7 +274,7 @@ ul.socials{
 --------------------------------------------------------------*/
 
 .gallery{
-    padding: 4em 0 0 12em;
+    padding: 4em 12em 0 12em;
 }
 
 .gal-title h4{
@@ -284,5 +284,23 @@ ul.socials{
 .gal-header h4{
     font-size:1.5rem;
 }
+
+.gal-grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3em;
+    padding: 3em 0;
+}
+
+.gal-grid-card p{
+    width:20%;
+}
+
+.gal-grid-img img{
+    width: 100%;
+    height: 700px;
+}
+
+
 
 }
