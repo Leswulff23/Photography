@@ -7,7 +7,7 @@ let x, y;
 
 function updateProgressBar() {
     progressBar.style.height = `${getScrollPercent()}%`;
-    progressNum.innerText = `${Math.ceil(getScrollPercent())}%`;
+    // progressNum.innerText = `${Math.ceil(getScrollPercent())}%`;
     requestAnimationFrame(updateProgressBar);
 }
 

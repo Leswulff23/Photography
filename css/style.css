@@ -24,7 +24,7 @@ body{
 
 *****************/
 
-header,section{
+header,section,footer{
     padding: 1em 1em;
 }
 
@@ -71,7 +71,7 @@ header{
     width: 100%;
 }
 
-.intro-title h4, .gal-title h4{
+.intro-title h4, .gal-title h4, .works-title h4, .lt-title h4{
     font-weight:250;
     font-size: 1rem;
     letter-spacing: 0.765em;
@@ -121,38 +121,166 @@ header{
     color: #878080;
 }
 
-.gal-grid-container{
+.grid-container{
     display: grid;
     grid-template-columns: auto;
     grid-gap: 2em;
     padding: 3em 0;
 }
 
-.gal-grid-img{
-    position: relative;
-    opacity: 0.535;
-}
+/* .grid-card:hover{
+    border: 1px solid #fff;
+} */
 
 .gal-grid-img img{
     width: 100%;
+    display: block;
+    opacity: 0.545;
+    z-index: 0;
 }
 
-.gal-grid-card h4,
-.gal-grid-card p{
+.grid-card h4,
+.grid-card p{
     position: absolute;
     padding: 1em;
     color: #9C9C9C;
     font-weight: 400;
     font-size: 1.5rem;
-    z-index: 9999;
+    opacity: 1;
+    z-index: 999999;
 }
 
-.gal-grid-card p{
+.grid-card p{
     padding: 3em 1em;
+    width: 70%;
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
 }
+
+.grid-card p:hover{
+    background-color:#D40610;
+    transition: 0.2s all;
+
+}
+
+.gal-grid-img img:hover{
+    opacity: 0.155;
+    transition: 0.2s all;
+}
+
+
+
+.gal-link{
+    display: flex;
+    justify-content:flex-end;
+    
+}
+
+.gal-link a{
+    text-decoration: none;
+}
+
+.gal-link h4{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #9C9C9C;
+    
+}
+
+.lt-works{
+    color: #000000;
+}
+
+.works-header h4{
+    font-size: 1.5rem;
+}
+
+.works-grid-img img{
+    width: 100%;
+    /* height: 500px; */
+    display: block;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.works-grid-img img:hover{
+    opacity: 1;
+    transition: 0.2s all;
+}
+
+.lt-title h4{
+    font-size: 0.7rem;
+    text-align: left;
+}
+
+.lt-header a{
+    text-decoration: none;
+    color: #000;
+}
+
+.lt-header h4{
+    font-size: 1.5rem;
+}
+
+.lt-header i{
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+footer{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../assets/bg/bg-camera.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+    /* background-attachment: fixed; */
+}
+
+.footer-top h4, .footer-location h4, .footer-contact h4, .footer-mt p{
+    font-size: 1.5rem;
+}
+
+footer .email{
+    color:#D40610;;
+}
+
+.footer-info{
+    width: 60%;
+    line-height: 1.5em;
+}
+
+.mb{
+    margin-top: 2.5em;
+}
+
+.mg{
+    margin-top: 6em;
+}
+
+.footer-mt p{
+    line-height: 2rem;
+}
+
+.footer-mt p span{
+    color:#D40610;
+}
+
+.input-form input,textarea{
+    background: none;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-top: 4em;
+    font-family: "Gilroy";
+    font-size: 1rem;
+}
+
+
+
+
 
 /*****************
 
@@ -198,7 +326,7 @@ section {
 .progress-bar-wrap{
     position: relative;
     width: 5px;
-    border: 1px solid black;
+    border: nonebb;
     border-radius: 10px;
     overflow: hidden;
     background-color:#444444;
@@ -273,7 +401,7 @@ ul.socials{
 # Gallery Section
 --------------------------------------------------------------*/
 
-.gallery{
+.gallery,.lt-works, footer{
     padding: 4em 12em 0 12em;
 }
 
@@ -285,14 +413,14 @@ ul.socials{
     font-size:1.5rem;
 }
 
-.gal-grid-container{
+.grid-container{
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 3em;
     padding: 3em 0;
 }
 
-.gal-grid-card p{
+.grid-card p{
     width:20%;
 }
 
@@ -301,6 +429,56 @@ ul.socials{
     height: 700px;
 }
 
+.gal-link{
+    padding-bottom: 3em;
+    
+}
+
+.grid-container.works{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 3em;
+    padding: 3em 1em;
+
+}
+
+.mg{
+    margin-top: 2.5em;
+}
+
+.mb{
+    margin-top: 4em;
+}
 
 
+.lt-title h4, .lt-header h4{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.lt-header h4, .lt-header i{
+    font-size: 3rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row-l{
+    border: 1px solid green;
+}
+
+.row-r{
+    width: 45%;
+}
+
+footer{
+    height: 100vh;
+}
+
+.footer-mt{
+    width: 70%;
+}
 }
