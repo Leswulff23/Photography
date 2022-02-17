@@ -40,11 +40,7 @@ header{
     justify-content: space-between;
 }
 
-.topnav.right{
-    align-items: center;
-    justify-content: space-around;
-    width:5em;
-}
+
 
 .topnav.right i{
     font-size: 1.5em;
@@ -52,6 +48,94 @@ header{
 
 .topnav h4{
     font-weight: 500;
+}
+
+#menu{
+	width: 55px;
+	height: 30px;
+	margin: 10px 0 20px 20px;
+    padding: 0.7em;
+	cursor: pointer;
+}
+.bar{
+	height: 1px;
+	width: 100%;
+	background-color: #fff;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-10px);
+    width: 40%;
+}
+
+#bar2{
+    width: 60%;
+}
+
+#bar3{
+	transform: translateY(10px);
+}
+.nav li a{
+	color: red;
+    font-size: 2rem;
+	text-decoration: none;
+}
+
+.nav li a:hover{
+	color: #D40610;
+}
+
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+    margin-left: -20em;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	display: none;
+
+}
+.menu-bg, #menu-bar{
+	top: 55px;
+	left: 91%;
+	position: fixed;
+}
+.menu-bg{
+	z-index: 99999;
+	width: 0;
+	height: 0;
+	margin: 50px auto;
+	background: radial-gradient(circle,#fff,#fff);
+	border-radius: 50%;
+    transition: all .8s cubic-bezier(0.68,-0.55,0.265,1.55);
+	/* transition: 4s ease; */
+}
+#menu-bar{
+	z-index: 99999999;	
+}
+.change-bg{
+	width: 80%;
+	height: 90rem;
+	transform: translate(-60%,-50%);
+}
+.change .bar{
+	background-color: #000;
+}
+.change #bar1{
+	transform: translateY(1px) rotateZ(-45deg); 
+    width: 100%;
+}
+.change #bar3{
+	transform: translateY(-1px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
 }
 
 
@@ -147,7 +231,7 @@ header{
     font-weight: 400;
     font-size: 1.5rem;
     opacity: 1;
-    z-index: 999999;
+    z-index: 99;
 }
 
 .grid-card p{
@@ -255,7 +339,7 @@ footer .email{
 }
 
 .mg{
-    margin-top: 6em;
+    margin-top: 4em;
 }
 
 .footer-mt p{
@@ -276,6 +360,17 @@ footer .email{
     margin-top: 4em;
     font-family: "Gilroy";
     font-size: 1rem;
+}
+
+button{
+    padding:1em;
+    font-size: 1rem;
+    width: 40%;
+    border: none;
+    outline: none;
+    background: #D40610;
+    color: #fff;
+    font-family: inherit;
 }
 
 
@@ -446,9 +541,7 @@ ul.socials{
     margin-top: 2.5em;
 }
 
-.mb{
-    margin-top: 4em;
-}
+
 
 
 .lt-title h4, .lt-header h4{
@@ -466,10 +559,6 @@ ul.socials{
     justify-content: space-between;
 }
 
-.row-l{
-    border: 1px solid green;
-}
-
 .row-r{
     width: 45%;
 }
@@ -480,5 +569,15 @@ footer{
 
 .footer-mt{
     width: 70%;
+}
+
+.footer-top h4{
+    font-size: 2.5rem;
+}
+
+.footer-info p{
+    width: 83%;
+    font-size: 1rem;
+
 }
 }
